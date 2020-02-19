@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Crucycle</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+body { text-align:center; 
+background-image:url(
+'wolf8.jpg');
+background-repeat: no-repeat;   background-attachment: fixed;   background-size: cover }
+</style>
+<body>
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:250px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h1 class="w3-padding-64"><b><img src="wolf9.jpg" width="200" height="100"</h1>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+	<a href="index6.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Classes</a>
+     <a href="index7.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+
+<!-- Top menu on small screens -->
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+<h2 style="text-align:center;color:Orange;"><b>Ride With The Pack</b></h2>
+    
+  </div>
+  
+  <!-- Our mission-->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <marquee><h3 class="w3-xxxmedium w3-text-orange"><b>Our mission</b></h3></marquee>
+    <hr style="width:50px;border:5px solid grey" class="w3-round">
+  </div>
+
+<h4 style="text-align:center;color:Orange;">Cru is defined as the process of developing and maturing physically, mentally and spiritually. CruCycle approaches this process with the same passion and mentality of a wolf and its wolf pack. We thrive and exist for the pursuit of organic growth, not as an individual, but alongside our pack, shoulder to shoulder. This attitude extends beyond the studio, into our daily lives and the communities around us; human or animal, whose lives we can enrich through our passion.</h4>
+<br>
+ <!-- The Team -->
+  <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="wolf22.jpg" alt="xxx" width="100" height="100">
+          <p>Indoor Cycling</p>
+         </div>
+
+ </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+       <img src="wolf21.jpg" alt="xxx" width="115" height="115">
+        <div 
+          
+          <p>50 Minutes</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+       <img src="wolf20.jpg" alt="xxx" width="100" height="100">
+       
+          <p>All Levels</p>
+        </div>
+      </div>
+    </div>
+
+</br>
+<br>
+<p class="w3-xxxlarge w3-text-red" style="border:2px; border-style:solid; border-color:#FF0000; padding: 0.3em;"> <b>What is Crucycle?</b> </p> <br>
+ <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fridewiththepack%2Fvideos%2F2032022173702551%2F&show_text=0&width=560" width="560" height="316" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true">
+</iframe>
+
+
+<p class="w3-xxxlarge w3-text-red" style="border:2px; border-style:solid; border-color:#FF0000; padding: 0.3em;"> <b>What is Crucycle?</b> </p> <br>
+ <iframe width="420" height="345" src="https://www.youtube.com/embed/THGNxso7J8U">
+</iframe>
+
+</div> 
+  
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 720; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 300; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 560; 
+} 
+</script>
+
+</body>
+</html>
